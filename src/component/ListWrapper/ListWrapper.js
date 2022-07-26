@@ -1,13 +1,13 @@
 import React from 'react';
 import ListItem from './../ListItem/ListItem'
-const arr = [1,2,3,4]
+import {twitterAccounts} from '../../data/twitterAccounts'
 
 const num = 5;
 const ListWrapper = () => (
   <>
     <ul>
-    
-   {arr.map(elem => <ListItem iter={elem}/>)}
+    {}
+   {twitterAccounts.map(elem => <ListItem {...elem}/>)}
     
       </ul>
   </>

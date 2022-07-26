@@ -13,8 +13,6 @@ import ListWrapper from './component/ListWrapper/ListWrapper'
 const App = () => (
   <>
   <ListWrapper />
-    <h1>Hello</h1>
-    <p>to ja</p>
   </>
 );
 export default App;
