@@ -3,9 +3,12 @@
 // import michaelJacksonImage from 'assets/images/michaeljackson.jpg';
 // import kentCDoddsImage from 'assets/images/kentcdodds.jpg';
 
+
+
 export const twitterAccounts = [
     {
         // image: danAbramovImage,
+        image: '../assets/images/danabramov.jpg',
         name: 'Dan Abramov',
         description: 'Working on @reactjs. The demo guy.',
         twitterLink: 'https://twitter.com/dan_abramov',
