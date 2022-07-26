@@ -1,13 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ListItem = (props) =>(
+const ListItem = ( {
+  image,
+  name, 
+  description, 
+  twitterLink
+} )=> (
   <>
     <li>
-      <figure><img src={props.image} alt={props.name}/></figure>
-      <h1>{props.name}</h1>
-      <p>{props.description}</p>
-      <a href={props.twitterLink}>Go to Twitter account</a>
+      <figure>
+        <img src={image} alt={name} />
+      </figure>
+      <div>
+        <h1>{name}</h1>
+        <p>{description}</p>
+        <a href={twitterLink}>Go to Twitter account</a>
+      </div>
     </li>
   </>
-)
+);
+
+ListItem.prototype = {
+  image: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  twitterLink: PropTypes.string
+}
+
+
 export default ListItem;

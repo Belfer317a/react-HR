@@ -1,15 +1,15 @@
 import React from 'react';
-import ListItem from './../ListItem/ListItem'
-import {twitterAccounts} from '../../data/twitterAccounts'
+import ListItem from './../ListItem/ListItem';
+import { twitterAccounts } from '../../data/twitterAccounts';
 
 const num = 5;
 const ListWrapper = () => (
   <>
     <ul>
-    {}
-   {twitterAccounts.map(elem => <ListItem {...elem}/>)}
-    
-      </ul>
+      {twitterAccounts.map((item) => (
+        <ListItem {...item} />
+      ))}
+    </ul>
   </>
-)
-export default ListWrapper
+);
+export default ListWrapper;
