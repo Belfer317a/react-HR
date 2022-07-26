@@ -22,10 +22,10 @@ const ListItem = ( {
 );
 
 ListItem.prototype = {
-  image: PropTypes.string,
-  name: PropTypes.string,
-  description: PropTypes.string,
-  twitterLink: PropTypes.string
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  twitterLink: PropTypes.string.isRequired
 }
 
 
